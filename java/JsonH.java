@@ -72,7 +72,6 @@ public class JsonH {
         int keySize = keysArray.length();
         List<String> keys = new ArrayList<>();
         for (int i = 0; i < keySize; i++) keys.add(keysArray.getString(i));
-        Collections.sort(keys);
 
         for (int i = 1; i < length; i++) {
             JSONArray o = originJson.getJSONArray(i);
