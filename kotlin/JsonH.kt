@@ -68,7 +68,6 @@ object JsonH {
         val keys = mutableListOf<String>()
         for (i in 0 until keySize)
             keys.add(keysArray.getString(i))
-        keys.sortBy { it }
 
         for (i in 1 until length) {
             val o = originJson.getJSONArray(i)
